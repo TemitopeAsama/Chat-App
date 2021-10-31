@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c9eabc0c75.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Chat App</title>
+
+    <style>
+      .attribution {
+        margin: 2em 0;
+        font-family: "Rubik", sans-serif;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!------------------------- GRADIENT BLOB 💜---------------------------->
+
+      <div class="bubble"></div>
+
+      <div class="main-pg">
+        <div class="blob"></div>
+
+        <!----------------------- PHONE OUTLINE 📱 ---------------------------->
+        <div class="phone">
+          <!---------- PHONE NOTCH ----------------->
+          <div class="notch"></div>
+          <!---------------------- PHONE SCREEN 📲 ---------------------------->
+          <div class="screen">
+            <!------------------ RECIPIENT'S PROFILE 👩‍💻 ----------------------->
+            <div class="profile">
+              <div class="profile-left">
+                <i class="fas fa-angle-left"></i>
+                <img src="images/avatar.jpg" alt="avatar" class="avatar" />
+                <div class="name">
+                  <p class="username">Samuel Green</p>
+                  <p class="status">Available to Walk</p>
+                </div>
+              </div>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+
+            <div class="chat">
+              <!---------------------- CHAT BUBBLES 💬 ---------------------------->
+              <div class="sender-1 sender">
+                That sounds great. I’d be <br />
+                happy to discuss more.
+              </div>
+
+              <div class="sender-2 sender">
+                Could you send over some <br />
+                pictures of your dog, please?
+              </div>
+
+              <div class="receiver" id="dog-pics">
+                <img
+                  src="images/dog-image-1.jpg"
+                  class="dog-1 dog"
+                  alt="dog-image-1"
+                />
+                <img
+                  src="images/dog-image-2.jpg"
+                  class="dog-2 dog"
+                  alt="dog-image-2"
+                />
+                <img
+                  src="images/dog-image-3.jpg"
+                  class="dog-3 dog"
+                  alt="dog-image-3"
+                />
+              </div>
+
+              <div class="receiver-1 receiver">
+                Here are a few pictures. She’s <br />
+                a happy girl!
+              </div>
+
+              <div class="receiver-2 receiver">Can you make it?</div>
+
+              <div class="sender-3 sender">
+                She looks so happy! The time <br />
+                we discussed works. How <br />
+                long shall I take her out for?
+              </div>
+              <!-------------------------- RADIO BUTTONS 📻------------------------------>
+              <div class="rad-1">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="radio-1"
+                  checked="checked"
+                />
+                <label for="radio-1">
+                  30 minute walk
+                  <span>$29</span>
+                </label>
+              </div>
+
+              <div class="rad-2">
+                <input type="radio" id="radio-2" class="radio" />
+                <label for="radio-2">
+                  1 hour walk
+                  <span>$49</span>
+                </label>
+              </div>
+
+              <div class="type">
+                <input type="text" placeholder="Type a message…" id="textbox" />
+                <i class="fas fa-chevron-circle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-txt">
+          <!--------------------------- MAIN HEADLINE 📰----------------------->
+          <h1>Simple booking</h1>
+  
+          <p class="text">
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the
+            walk has been completed you can rate your walker and book again all
+            through the chat.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Temitope Asama</a>.
+    </div>
+  </body>
+</html>
